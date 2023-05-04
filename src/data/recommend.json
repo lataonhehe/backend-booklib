@@ -1,0 +1,652 @@
+{
+    "popular": {
+        "last_updated": "2023-05-04 22:00:36",
+        "books": [
+            {
+                "book_id": 100,
+                "title": "To the Lighthouse",
+                "authors": [
+                    {
+                        "11": "Valmiki"
+                    }
+                ],
+                "current_rating": 3.0,
+                "genre": [
+                    "Vi\u1ec5n t\u01b0\u1edfng"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/to-the-lighthouse.jpg",
+                "page_count": 209,
+                "year": 1927
+            },
+            {
+                "book_id": 99,
+                "title": "Mrs Dalloway",
+                "authors": [
+                    {
+                        "12": "Mark Twain"
+                    }
+                ],
+                "current_rating": 3.0,
+                "genre": [
+                    "T\u1ed9i ph\u1ea1m, trinh th\u00e1m"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/mrs-dalloway.jpg",
+                "page_count": 216,
+                "year": 1925
+            },
+            {
+                "book_id": 98,
+                "title": "Leaves of Grass",
+                "authors": [
+                    {
+                        "95": "Leo Tolstoy"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "H\u00e0i h\u01b0\u1edbc"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/leaves-of-grass.jpg",
+                "page_count": 152,
+                "year": 1855
+            },
+            {
+                "book_id": 97,
+                "title": "Mahabharata",
+                "authors": [
+                    {
+                        "95": "Leo Tolstoy"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "T\u1ed9i ph\u1ea1m, trinh th\u00e1m"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-mahab-harata.jpg",
+                "page_count": 276,
+                "year": -700
+            },
+            {
+                "book_id": 96,
+                "title": "The Aeneid",
+                "authors": [
+                    {
+                        "95": "Leo Tolstoy"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "Phi\u00eau l\u01b0u"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-aeneid.jpg",
+                "page_count": 442,
+                "year": -23
+            },
+            {
+                "book_id": 95,
+                "title": "Ramayana",
+                "authors": [
+                    {
+                        "94": "Jonathan Swift"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "Vi\u1ec5n t\u01b0\u1edfng"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/ramayana.jpg",
+                "page_count": 152,
+                "year": -450
+            },
+            {
+                "book_id": 94,
+                "title": "The Adventures of Huckleberry Finn",
+                "authors": [
+                    {
+                        "93": "Italo Svevo"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "C\u1ed5 t\u00edch, truy\u1ec1n thuy\u1ebft"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-adventures-of-huckleberry-finn.jpg",
+                "page_count": 224,
+                "year": 1884
+            },
+            {
+                "book_id": 93,
+                "title": "The Death of Ivan Ilyich",
+                "authors": [
+                    {
+                        "92": "Laurence Sterne"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "H\u00e0i h\u01b0\u1edbc"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-death-of-ivan-ilyich.jpg",
+                "page_count": 92,
+                "year": 1886
+            },
+            {
+                "book_id": 92,
+                "title": "Anna Karenina",
+                "authors": [
+                    {
+                        "91": "Stendhal"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "Phi\u00eau l\u01b0u"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/anna-karenina.jpg",
+                "page_count": 864,
+                "year": 1877
+            },
+            {
+                "book_id": 91,
+                "title": "War and Peace",
+                "authors": [
+                    {
+                        "90": "Sophocles"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "L\u1ecbch s\u1eed"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/war-and-peace.jpg",
+                "page_count": 1296,
+                "year": 1867
+            },
+            {
+                "book_id": 90,
+                "title": "Gulliver's Travels",
+                "authors": [
+                    {
+                        "87": "William Shakespeare"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "H\u00e0i h\u01b0\u1edbc"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/gullivers-travels.jpg",
+                "page_count": 178,
+                "year": 1726
+            },
+            {
+                "book_id": 89,
+                "title": "Confessions of Zeno",
+                "authors": [
+                    {
+                        "87": "William Shakespeare"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "Phi\u00eau l\u01b0u"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/confessions-of-zeno.jpg",
+                "page_count": 412,
+                "year": 1923
+            },
+            {
+                "book_id": 88,
+                "title": "The Life And Opinions of Tristram Shandy",
+                "authors": [
+                    {
+                        "87": "William Shakespeare"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "C\u1ed5 \u0111i\u1ec3n"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-life-and-opinions-of-tristram-shandy.jpg",
+                "page_count": 640,
+                "year": 1760
+            },
+            {
+                "book_id": 87,
+                "title": "The Red and the Black",
+                "authors": [
+                    {
+                        "86": "Jos\u00e9 Saramago"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "T\u1ed9i ph\u1ea1m, trinh th\u00e1m"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/le-rouge-et-le-noir.jpg",
+                "page_count": 576,
+                "year": 1830
+            },
+            {
+                "book_id": 86,
+                "title": "Oedipus the King",
+                "authors": [
+                    {
+                        "85": "Tayeb Salih"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "L\u1ecbch s\u1eed"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/oedipus-the-king.jpg",
+                "page_count": 88,
+                "year": -430
+            },
+            {
+                "book_id": 85,
+                "title": "Othello",
+                "authors": [
+                    {
+                        "84": "Saadi"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "C\u1ed5 t\u00edch, truy\u1ec1n thuy\u1ebft"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/othello.jpg",
+                "page_count": 314,
+                "year": 1609
+            },
+            {
+                "book_id": 84,
+                "title": "King Lear",
+                "authors": [
+                    {
+                        "83": "Salman Rushdie"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "C\u1ed5 t\u00edch, truy\u1ec1n thuy\u1ebft"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/king-lear.jpg",
+                "page_count": 384,
+                "year": 1608
+            },
+            {
+                "book_id": 83,
+                "title": "Hamlet",
+                "authors": [
+                    {
+                        "82": "Rumi"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "C\u1ed5 \u0111i\u1ec3n"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/hamlet.jpg",
+                "page_count": 432,
+                "year": 1603
+            },
+            {
+                "book_id": 22,
+                "title": "Great Expectations",
+                "authors": [
+                    {
+                        "21": "Louis-Ferdinand C\u00e9line"
+                    }
+                ],
+                "current_rating": 4.0,
+                "genre": [
+                    "Vi\u1ec5n t\u01b0\u1edfng"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/great-expectations.jpg",
+                "page_count": 194,
+                "year": 1861
+            },
+            {
+                "book_id": 82,
+                "title": "Blindness",
+                "authors": [
+                    {
+                        "81": "Juan Rulfo"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "T\u1ed9i ph\u1ea1m, trinh th\u00e1m"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/blindness.jpg",
+                "page_count": 352,
+                "year": 1995
+            }
+        ]
+    },
+    "new": {
+        "last_updated": "2023-05-04 22:00:36",
+        "books": [
+            {
+                "book_id": 100,
+                "title": "To the Lighthouse",
+                "authors": [
+                    {
+                        "11": "Valmiki"
+                    }
+                ],
+                "current_rating": 3.0,
+                "genre": [
+                    "Vi\u1ec5n t\u01b0\u1edfng"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/to-the-lighthouse.jpg",
+                "page_count": 209,
+                "year": 1927
+            },
+            {
+                "book_id": 99,
+                "title": "Mrs Dalloway",
+                "authors": [
+                    {
+                        "12": "Mark Twain"
+                    }
+                ],
+                "current_rating": 3.0,
+                "genre": [
+                    "T\u1ed9i ph\u1ea1m, trinh th\u00e1m"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/mrs-dalloway.jpg",
+                "page_count": 216,
+                "year": 1925
+            },
+            {
+                "book_id": 98,
+                "title": "Leaves of Grass",
+                "authors": [
+                    {
+                        "95": "Leo Tolstoy"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "H\u00e0i h\u01b0\u1edbc"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/leaves-of-grass.jpg",
+                "page_count": 152,
+                "year": 1855
+            },
+            {
+                "book_id": 97,
+                "title": "Mahabharata",
+                "authors": [
+                    {
+                        "95": "Leo Tolstoy"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "T\u1ed9i ph\u1ea1m, trinh th\u00e1m"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-mahab-harata.jpg",
+                "page_count": 276,
+                "year": -700
+            },
+            {
+                "book_id": 96,
+                "title": "The Aeneid",
+                "authors": [
+                    {
+                        "95": "Leo Tolstoy"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "Phi\u00eau l\u01b0u"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-aeneid.jpg",
+                "page_count": 442,
+                "year": -23
+            },
+            {
+                "book_id": 95,
+                "title": "Ramayana",
+                "authors": [
+                    {
+                        "94": "Jonathan Swift"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "Vi\u1ec5n t\u01b0\u1edfng"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/ramayana.jpg",
+                "page_count": 152,
+                "year": -450
+            },
+            {
+                "book_id": 94,
+                "title": "The Adventures of Huckleberry Finn",
+                "authors": [
+                    {
+                        "93": "Italo Svevo"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "C\u1ed5 t\u00edch, truy\u1ec1n thuy\u1ebft"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-adventures-of-huckleberry-finn.jpg",
+                "page_count": 224,
+                "year": 1884
+            },
+            {
+                "book_id": 93,
+                "title": "The Death of Ivan Ilyich",
+                "authors": [
+                    {
+                        "92": "Laurence Sterne"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "H\u00e0i h\u01b0\u1edbc"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-death-of-ivan-ilyich.jpg",
+                "page_count": 92,
+                "year": 1886
+            },
+            {
+                "book_id": 92,
+                "title": "Anna Karenina",
+                "authors": [
+                    {
+                        "91": "Stendhal"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "Phi\u00eau l\u01b0u"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/anna-karenina.jpg",
+                "page_count": 864,
+                "year": 1877
+            },
+            {
+                "book_id": 91,
+                "title": "War and Peace",
+                "authors": [
+                    {
+                        "90": "Sophocles"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "L\u1ecbch s\u1eed"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/war-and-peace.jpg",
+                "page_count": 1296,
+                "year": 1867
+            },
+            {
+                "book_id": 90,
+                "title": "Gulliver's Travels",
+                "authors": [
+                    {
+                        "87": "William Shakespeare"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "H\u00e0i h\u01b0\u1edbc"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/gullivers-travels.jpg",
+                "page_count": 178,
+                "year": 1726
+            },
+            {
+                "book_id": 89,
+                "title": "Confessions of Zeno",
+                "authors": [
+                    {
+                        "87": "William Shakespeare"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "Phi\u00eau l\u01b0u"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/confessions-of-zeno.jpg",
+                "page_count": 412,
+                "year": 1923
+            },
+            {
+                "book_id": 88,
+                "title": "The Life And Opinions of Tristram Shandy",
+                "authors": [
+                    {
+                        "87": "William Shakespeare"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "C\u1ed5 \u0111i\u1ec3n"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/the-life-and-opinions-of-tristram-shandy.jpg",
+                "page_count": 640,
+                "year": 1760
+            },
+            {
+                "book_id": 87,
+                "title": "The Red and the Black",
+                "authors": [
+                    {
+                        "86": "Jos\u00e9 Saramago"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "T\u1ed9i ph\u1ea1m, trinh th\u00e1m"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/le-rouge-et-le-noir.jpg",
+                "page_count": 576,
+                "year": 1830
+            },
+            {
+                "book_id": 86,
+                "title": "Oedipus the King",
+                "authors": [
+                    {
+                        "85": "Tayeb Salih"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "L\u1ecbch s\u1eed"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/oedipus-the-king.jpg",
+                "page_count": 88,
+                "year": -430
+            },
+            {
+                "book_id": 85,
+                "title": "Othello",
+                "authors": [
+                    {
+                        "84": "Saadi"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "C\u1ed5 t\u00edch, truy\u1ec1n thuy\u1ebft"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/othello.jpg",
+                "page_count": 314,
+                "year": 1609
+            },
+            {
+                "book_id": 84,
+                "title": "King Lear",
+                "authors": [
+                    {
+                        "83": "Salman Rushdie"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "C\u1ed5 t\u00edch, truy\u1ec1n thuy\u1ebft"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/king-lear.jpg",
+                "page_count": 384,
+                "year": 1608
+            },
+            {
+                "book_id": 83,
+                "title": "Hamlet",
+                "authors": [
+                    {
+                        "82": "Rumi"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "C\u1ed5 \u0111i\u1ec3n"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/hamlet.jpg",
+                "page_count": 432,
+                "year": 1603
+            },
+            {
+                "book_id": 82,
+                "title": "Blindness",
+                "authors": [
+                    {
+                        "81": "Juan Rulfo"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "T\u1ed9i ph\u1ea1m, trinh th\u00e1m"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/blindness.jpg",
+                "page_count": 352,
+                "year": 1995
+            },
+            {
+                "book_id": 81,
+                "title": "Season of Migration to the North",
+                "authors": [
+                    {
+                        "80": "Fran\u00e7ois Rabelais"
+                    }
+                ],
+                "current_rating": 0.0,
+                "genre": [
+                    "L\u1ecbch s\u1eed"
+                ],
+                "cover": "https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/images/season-of-migration-to-the-north.jpg",
+                "page_count": 139,
+                "year": 1966
+            }
+        ]
+    }
+}
