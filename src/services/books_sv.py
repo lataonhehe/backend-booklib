@@ -3,7 +3,7 @@ from datetime import datetime
 from operator import itemgetter
 
 from config.config import RECOMMEND_PATH
-from init_app import db
+from init_app import db, mydb
 from src.const import *
 from src.controller.auth import get_current_user
 from src.models.authors_books_md import BooksAuthors
@@ -163,8 +163,8 @@ def search_by_author(query):
     return result, OK_STATUS
 
 
-def filter_books(genres, sort_by_year, min_rating, min_pages, max_pages):
-    if not (genres or sort_by_year or min_rating or min_pages or max_pages):
+def filter_books(genres, min_year, max_year, min_pages, max_pages, min_rating, max_rating):
+    if not (genres or min_year or min_rating or min_pages or max_pages):
         return None, NOT_FOUND
 
     all_books = Books.query.all()
@@ -190,12 +190,30 @@ def filter_books(genres, sort_by_year, min_rating, min_pages, max_pages):
     if len(results) == 0:
         return None, NOT_FOUND
 
-    if sort_by_year == ASCEND:
+    if min_year == ASCEND:
         results.sort(key=itemgetter(1))
-    elif sort_by_year == DESCEND:
+    elif min_year == DESCEND:
         results.sort(key=itemgetter(1), reverse=True)
 
     results = [result[0] for result in results]
+    
+    cur = mydb.cursor()
+    args = [genres[0], min_year, max_year, min_pages, max_pages, min_rating, max_rating]
+    cur.callproc('filter_book', args)
+
+    for out in cur.stored_results():
+        header = [x[0] for x in out.description]
+        header.remove('author_id')
+        header[2] = 'authors'
+        res = out.fetchall()
+
+    results = []
+    for row in res:
+        row = list(row)
+        row[2] = [{row[2]: row[3]}]
+        del row[3]
+        row[4] = [row[4]]
+        results.append(dict(zip(header, row)))
 
     return results, OK_STATUS
 

@@ -50,14 +50,18 @@ class BooksFilter(Resource):
     def get(self):
         args = request.args
 
-        genres = args.get('genres').split(',')
-        sort_by_year = args.get('sort_by_year')
-        min_rating = args.get('rating_from')
+        genres = args.get('genres')#.split(',')
+        genres = genres.split(',') if genres else []
+        min_year = args.get('min_year')
+        max_year = args.get('max_year')
         min_pages = args.get('min_pages')
         max_pages = args.get('max_pages')
+        min_rating = args.get('min_rating')
+        max_rating = args.get('max_rating')
 
-        result, status = filter_books(
-            genres, sort_by_year, min_rating, min_pages, max_pages)
+        print(genres,"|", min_year, max_year,"|", min_pages, max_pages,"|", min_rating, max_rating)
+
+        result, status = filter_books(genres, min_year, max_year, min_pages, max_pages, min_rating, max_rating)
 
         if status == OK_STATUS:
             return result, status

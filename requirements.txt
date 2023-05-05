@@ -4,3 +4,5 @@ Flask_RESTful
 flask_sqlalchemy
 google_auth_oauthlib
 flask-mysqldb
+Flask-JWT-Extended
+Flask-Session
