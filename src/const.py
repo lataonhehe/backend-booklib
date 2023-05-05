@@ -8,8 +8,8 @@ NAME = 'name'
 PICTURE = 'picture'
 CONTENT_TYPE = "content-type"
 
-MUGGLE_USER = '0'
-ADMIN = '1'
+USER = 0
+ADMIN = 1
 
 # Response keywords
 MESSAGE = 'message'

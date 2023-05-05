@@ -19,7 +19,6 @@ def login_required():
         @wraps(function)
         def real_func(*args, **kwargs):
             state = request.args.get(STATE)
-            print("login_required")
             # state = request.cookies.get(STATE)
             if not state:
                 return {MESSAGE: "No state found. Login first."}, NON_AUTHORITATIVE

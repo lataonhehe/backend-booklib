@@ -29,11 +29,10 @@ class Login(Resource):
             return {'msg': 'Wrong us'}, 401
         if not is_valid_username(form[USERNAME], 64):
             return {'msg': 'Wrong us'}, 401
-        print(form)
+
         user = Users.query.filter_by(username=form[USERNAME]).first()
         if user:
             if user.password == form[PASSWORD]:
-                print("Login thanh cong")
                 access_token = jwt.encode(
                         {
                             'username': user.username
@@ -42,10 +41,13 @@ class Login(Resource):
                 # user.login_state = access_token
                 # db.session.commit()
                 # response = {'access_token':access_token}
+                link = f"{FRONTEND_URL}/account"
+                if user.user_role == ADMIN:
+                    link = f"{FRONTEND_URL}/dashboard"
                 
                 response = Response(
                     response=json.dumps(
-                        {'url': f"{FRONTEND_URL}/account", 'user': access_token}),
+                        {'url': link, 'user': access_token}),
                     status=200,
                     mimetype='application/json'
                 )
@@ -136,10 +138,12 @@ class Callback(Resource):
                         }, SECRET_KEY, algorithm="HS256"
                     )
         # user.login_state = access_token
-
+        link = f"{FRONTEND_URL}/account"
+        if user.user_role == ADMIN:
+            link = f"{FRONTEND_URL}/dashboard"
         response = Response(
                     response=json.dumps(
-                        {'url': f"{FRONTEND_URL}/account", 'user': access_token}),
+                        {'url': link, 'user': access_token}),
                     status=200,
                     mimetype='application/json'
                 )
