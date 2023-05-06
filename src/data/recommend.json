@@ -1,6 +1,6 @@
 {
     "popular": {
-        "last_updated": "2023-05-05 17:50:57",
+        "last_updated": "2023-05-06 18:03:19",
         "books": [
             {
                 "book_id": 100,
@@ -325,7 +325,7 @@
         ]
     },
     "new": {
-        "last_updated": "2023-05-05 17:50:58",
+        "last_updated": "2023-05-06 18:03:19",
         "books": [
             {
                 "book_id": 100,

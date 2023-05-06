@@ -31,7 +31,7 @@ def change_user_role(username, new_role):
     if equal(user.user_role, new_role):
         return CONFLICT
 
-    if new_role == ADMIN or new_role == MUGGLE_USER:
+    if new_role == ADMIN or new_role == USER:
         user.user_role = new_role
         db.session.commit()
         return OK_STATUS

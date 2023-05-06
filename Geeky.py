@@ -25,7 +25,7 @@ api.add_resource(BooksFilter, '/books/filter')
 api.add_resource(BookDetail, '/books/')
 
 api.add_resource(Login, '/login')
-# api.add_resource(LoginAPI,'/loginAPI')
+api.add_resource(LoginAPI,'/loginAPI')
 api.add_resource(Register, '/register')
 api.add_resource(Callback, '/callback')
 api.add_resource(Logout, '/logout')

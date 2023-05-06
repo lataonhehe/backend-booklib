@@ -62,7 +62,7 @@ def notify_authors_new_book(author_ids, book_id):
             if user.recieve_email == YES_RECEIVE_EMAIL:
                 email_recipients.append(user.email)
 
-        send_email(AUTHOR_NEW_BOOK_NOTI.format(author.author_name),
-                   email_recipients, BOOK_UPDATE_BODY.format(request.full_path))
+        # send_email(AUTHOR_NEW_BOOK_NOTI.format(author.author_name),
+        #            email_recipients, BOOK_UPDATE_BODY.format(request.full_path))
 
     db.session.commit()

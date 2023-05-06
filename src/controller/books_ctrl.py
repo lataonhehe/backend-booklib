@@ -87,6 +87,7 @@ class BookDetail(Resource):
     @admin_only()
     def post(self):
         book_info = request.get_json()
+
         result, status = add_book(book_info)
 
         if status == OK_STATUS:

@@ -3,7 +3,7 @@ import json
 import google.auth.transport.requests
 import requests
 import jwt
-from flask import redirect, request, session
+from flask import redirect, request, session, make_response, render_template
 from flask_session import Session
 from flask.wrappers import Response
 from flask_cors import cross_origin
@@ -29,7 +29,7 @@ class Login(Resource):
             return {'msg': 'Wrong us'}, 401
         if not is_valid_username(form[USERNAME], 64):
             return {'msg': 'Wrong us'}, 401
-
+        print(form)
         user = Users.query.filter_by(username=form[USERNAME]).first()
         if user:
             if user.password == form[PASSWORD]:
@@ -38,9 +38,7 @@ class Login(Resource):
                             'username': user.username
                         }, SECRET_KEY, algorithm="HS256"
                     )
-                # user.login_state = access_token
-                # db.session.commit()
-                # response = {'access_token':access_token}
+
                 link = f"{FRONTEND_URL}/account"
                 if user.user_role == ADMIN:
                     link = f"{FRONTEND_URL}/dashboard"
@@ -61,14 +59,7 @@ class LoginAPI(Resource):
     def get(self):
         
         authorization_url, state = flow.authorization_url()
-        # response = redirect(authorization_url)
-        print("login")
-        # session[STATE] = state
-        # db.session.add(States(state))
-        # db.session.commit()
-
-        # print("STATE FROM LOGIN(): ", state)  # gud
-
+        print(authorization_url)
 
         response = Response(
             response=json.dumps(
@@ -141,16 +132,17 @@ class Callback(Resource):
         link = f"{FRONTEND_URL}/account"
         if user.user_role == ADMIN:
             link = f"{FRONTEND_URL}/dashboard"
-        response = Response(
-                    response=json.dumps(
-                        {'url': link, 'user': access_token}),
-                    status=200,
-                    mimetype='application/json'
-                )
-        # response.set_cookie(STATE, access_token)
-        # response = redirect(f"{FRONTEND_URL}/account")
+        # response = Response(
+        #             response=json.dumps(
+        #                 {'url': link, 'user': access_token}),
+        #             status=200,
+        #             mimetype='application/json'
+        #         )
         
-        return response
+        response = make_response(redirect(link))
+        response.set_cookie('state', access_token)
+        
+        return  response
 
 
 class Logout(Resource):
