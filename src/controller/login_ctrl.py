@@ -3,19 +3,16 @@ import json
 import google.auth.transport.requests
 import requests
 import jwt
-from flask import redirect, request, session, make_response, render_template
-from flask_session import Session
+from flask import redirect, request, make_response, render_template
 from flask.wrappers import Response
 from flask_cors import cross_origin
 from flask_restful import Resource
-from flask_jwt_extended import create_access_token,get_jwt,get_jwt_identity, unset_jwt_cookies
 from google.oauth2 import id_token
 from pip._vendor import cachecontrol
 
 from config.config import FRONTEND_URL, GOOGLE_CLIENT_ID, SECRET_KEY, flow
-from init_app import db
+from init_app import db, bcryptPS
 from src.const import *
-from src.models.states_md import States
 from src.models.users_md import Users
 from src.services.ratings_sv import *
 from src.services.users_sv import *
@@ -32,7 +29,8 @@ class Login(Resource):
         print(form)
         user = Users.query.filter_by(username=form[USERNAME]).first()
         if user:
-            if user.password == form[PASSWORD]:
+            is_valid = bcryptPS.check_password_hash(user.password, form[PASSWORD])
+            if is_valid:
                 access_token = jwt.encode(
                         {
                             'username': user.username
@@ -132,12 +130,6 @@ class Callback(Resource):
         link = f"{FRONTEND_URL}/account"
         if user.user_role == ADMIN:
             link = f"{FRONTEND_URL}/dashboard"
-        # response = Response(
-        #             response=json.dumps(
-        #                 {'url': link, 'user': access_token}),
-        #             status=200,
-        #             mimetype='application/json'
-        #         )
         
         response = make_response(redirect(link))
         response.set_cookie('state', access_token)
@@ -153,7 +145,6 @@ class Logout(Resource):
         # return response
 
         response=json.dumps({"message": "Logged out"})
-        unset_jwt_cookies(response)
         return Response(
             response,
             status=202,

@@ -1,6 +1,5 @@
 import sqlalchemy
-
-from init_app import db
+from init_app import db, bcryptPS
 from src.const import *
 from src.controller.auth import get_current_user
 from src.models.bookmarks_md import Bookmark
@@ -16,7 +15,7 @@ def add_user(user_json):
     user = Users()
     if user.existed_username(user_json[USERNAME]):
         user.username = user_json[USERNAME]
-        user.password = user_json[PASSWORD]
+        user.password = bcryptPS.generate_password_hash(user_json[PASSWORD]).decode('utf-8')
         user.email = user_json[EMAIL]
         # user.phone = user_json[PHONE]
 

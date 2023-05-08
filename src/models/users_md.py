@@ -26,13 +26,13 @@ class Users(db.Model):
         self.theme_preference = 1
         self.recieve_email = 1
 
-    def __init__(self, email, profile_pic):
-        self.username = get_username_from_email(email)
-        self.email = email
-        self.profile_pic = profile_pic
-        self.theme_preference = 1
-        self.user_role = 0
-        self.recieve_email = 1
+    # def __init__(self, email, profile_pic):
+    #     self.username = get_username_from_email(email)
+    #     self.email = email
+    #     self.profile_pic = profile_pic
+    #     self.theme_preference = 1
+    #     self.user_role = 0
+    #     self.recieve_email = 1
 
     def get_json(self):
         return {

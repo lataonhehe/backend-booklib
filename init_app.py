@@ -2,6 +2,7 @@ from flask import Flask
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from flask_jwt_extended import JWTManager
+from flask_bcrypt import Bcrypt
 import mysql.connector
 
 mydb = mysql.connector.connect(
@@ -20,6 +21,7 @@ app.config.update(SESSION_COOKIE_SAMESITE="None", SESSION_COOKIE_SECURE=True)
 CORS(app, supports_credentials=True)
 
 jwt = JWTManager(app)
+bcryptPS = Bcrypt(app)
 
 db = SQLAlchemy()
 db.init_app(app)

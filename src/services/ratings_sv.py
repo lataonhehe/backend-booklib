@@ -3,6 +3,7 @@ from src.const import *
 from src.controller.auth import get_current_user
 from src.models.books_md import Books
 from src.models.ratings_md import Ratings
+from src.models.users_md import Users
 
 
 def update_current_rating(username, book_id):
@@ -24,7 +25,12 @@ def get_ratings_by_stars(book_id, stars):
     ratings_query = Ratings.query.filter_by(book_id=book_id, stars=stars)
     ratings = []
     for rating in ratings_query:
-        ratings.append(rating.get_json())
+        avatar = Users.query.filter_by(username=rating.username).first().profile_pic
+        print(avatar)
+        res = rating.get_json(),
+        # res.append("'avatar': {avatar}")
+        print(res)
+        ratings.append(res)
 
     if stars == 1:
         key = 'one_star'
