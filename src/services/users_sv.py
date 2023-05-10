@@ -10,12 +10,13 @@ from src.models.users_md import Users
 from src.models.states_md import States
 from src.models.subscription_md import Subscription
 from src.services.collections_sv import get_own_collections
+from src.utils import get_username_from_email
 
 def add_user(user_json):
     user = Users()
     if user.existed_username(user_json[USERNAME]):
         user.username = user_json[USERNAME]
-        user.password = bcryptPS.generate_password_hash(user_json[PASSWORD]).decode('utf-8')
+        user.password = bcryptPS.generate_password_hash(user_json[PASSWORD], 10).decode('utf-8')
         user.email = user_json[EMAIL]
         # user.phone = user_json[PHONE]
 
@@ -25,6 +26,16 @@ def add_user(user_json):
         return OK_STATUS
 
     return BAD_REQUEST
+
+def add_user_API(email, profile_pic):
+    user = Users()
+    user.username = get_username_from_email(email)
+    user.email = email
+    user.profile_pic = profile_pic
+
+    db.session.add(user)
+    db.session.commit()
+    return user
 
 def get_own_account():
     user = get_current_user()

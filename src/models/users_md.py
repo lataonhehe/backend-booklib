@@ -3,7 +3,6 @@ from src.const import *
 from src.models.collections_md import Collections
 from src.utils import (is_url_image, is_valid_datetime, is_valid_name, is_valid_text,
                        is_valid_username, validate_phone)
-from src.utils import get_username_from_email
 
 
 class Users(db.Model):
@@ -25,14 +24,6 @@ class Users(db.Model):
         self.user_role = 0
         self.theme_preference = 1
         self.recieve_email = 1
-
-    # def __init__(self, email, profile_pic):
-    #     self.username = get_username_from_email(email)
-    #     self.email = email
-    #     self.profile_pic = profile_pic
-    #     self.theme_preference = 1
-    #     self.user_role = 0
-    #     self.recieve_email = 1
 
     def get_json(self):
         return {
