@@ -6,11 +6,11 @@ from flask_bcrypt import Bcrypt
 import mysql.connector
 
 mydb = mysql.connector.connect(
-  host="localhost",
-  user="root",
-  password="password",
-  port="3306",
-  database="w22g7_geek"
+    host="localhost",
+    user="root",
+    password="dtd2002",
+    port="3308",
+    database="w22g7_geek"
 )
 
 # app = Flask(__name__, template_folder=".\\build")

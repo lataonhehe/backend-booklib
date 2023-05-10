@@ -27,7 +27,7 @@ def get_ratings_by_stars(book_id, stars):
     for rating in ratings_query:
         avatar = Users.query.filter_by(username=rating.username).first().profile_pic
         print(avatar)
-        res = rating.get_json(),
+        res = rating.get_json()
         # res.append("'avatar': {avatar}")
         print(res)
         ratings.append(res)
@@ -72,8 +72,8 @@ def post_my_rating(json):
             db.session.add(rating)
             db.session.commit()
 
-            update_current_rating(user.username, json[BOOK_ID])
-            update_rating_count(json[BOOK_ID], 1)
+            # update_current_rating(user.username, json[BOOK_ID])
+            # update_rating_count(json[BOOK_ID], 1)
             return OK_STATUS
         except:
             return CONFLICT
